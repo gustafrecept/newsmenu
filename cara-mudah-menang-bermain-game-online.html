@@ -601,3 +601,297 @@
             overflow: hidden !important;
             position: relative !important
         }
+
+        amp-accordion,
+        amp-accordion>section {
+            margin: 0
+        }
+
+        amp-accordion:not(.i-amphtml-built)>section>:last-child {
+            display: none !important
+        }
+
+        amp-accordion:not(.i-amphtml-built)>section[expanded]>:last-child {
+            display: block !important
+        }
+    </style>
+    <script data-auto async src="https://cdn.ampproject.org/v0.mjs" type="module" crossorigin="anonymous"></script>
+    <script async nomodule src="https://cdn.ampproject.org/v0.js" crossorigin="anonymous"></script>
+    <script async src="https://cdn.ampproject.org/v0/amp-carousel-0.1.mjs" custom-element="amp-carousel" type="module" crossorigin="anonymous"></script>
+    <script async nomodule src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" crossorigin="anonymous" custom-element="amp-carousel"></script>
+    <script async src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.mjs" custom-element="amp-install-serviceworker" type="module" crossorigin="anonymous"></script>
+    <script async nomodule src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js" crossorigin="anonymous" custom-element="amp-install-serviceworker"></script>
+    <script async src="https://cdn.ampproject.org/v0/amp-youtube-0.1.mjs" custom-element="amp-youtube" type="module" crossorigin="anonymous"></script>
+    <script async nomodule src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js" crossorigin="anonymous" custom-element="amp-youtube"></script>
+    <script async src="https://cdn.ampproject.org/v0/amp-accordion-0.1.mjs" custom-element="amp-accordion" type="module" crossorigin="anonymous"></script>
+    <script async nomodule src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" crossorigin="anonymous" custom-element="amp-accordion"></script>
+    <style amp-custom>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        html {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%
+        }
+
+        a,
+        body,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        html,
+        p,
+        span {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            vertical-align: baseline
+        }
+
+        a,
+        a:active,
+        a:focus {
+            outline: 0;
+            text-decoration: none
+        }
+
+        a {
+            color: #fff
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+            margin-bottom: .5rem
+        }
+
+        p {
+            margin: 0 0 10px
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem
+        }
+
+        .clear {
+            clear: both
+        }
+
+        .acenter {
+            text-align: center
+        }
+
+        body {
+            background: url(https://i.pinimg.com/736x/6e/9c/43/6e9c43bff7df075c5cf62c02c2c7a3aa.jpg); /*1280 x 819*/
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            touch-action: manipulation;
+            cursor: pointer;
+            user-select: none;
+            background-image: none;
+
+            border: 1px solid transparent;
+            border-radius: 5px;
+            font: 250 16px Arial, "Helvetica Neue", Helvetica, sans-serif;
+            width: 100%;
+            color: #fff;
+            text-shadow: 0 0 3px #000;
+            letter-spacing: 1.1px
+        }
+
+        @keyframes blinking {
+            0% {
+                border: 2px solid #fff
+            }
+
+            100% {
+                border: 2px solid #008cff
+            }
+        }
+
+        @media (min-width:768px) {
+            .container {
+                max-width: 720px
+            }
+
+            .tron-regis {
+                margin: 0 10px 0 0
+            }
+
+            .tron-login {
+                margin: 10px 20px 10px 0
+            }
+        }
+
+        @media (min-width:992px) {
+            .container {
+                max-width: 960px
+            }
+
+            .tron-regis {
+                margin: 0 10px 0 0
+            }
+
+            .tron-login {
+                margin: 0 10px 0 0
+            }
+        }
+
+        @media (min-width:1200px) {
+            .container {
+                width: 1000px
+            }
+
+            .tron-regis {
+                margin: 0 10px 0 0
+            }
+
+            .tron-login {
+                margin: 0 10px 0 0
+            }
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px
+        }
+
+        .p-0 {
+            padding: 0
+        }
+
+        .col-md-12,
+        .col-md-4,
+        .col-md-6,
+        .col-md-8,
+        .col-xs-6 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .col-xs-6 {
+            float: left;
+            width: 50%
+        }
+
+        @media (min-width:768px) {
+            .col-md-4 {
+                -ms-flex: 0 0 33.333333%;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%
+            }
+
+            .col-md-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%
+            }
+
+            .col-md-8 {
+                -ms-flex: 0 0 66.666667%;
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%
+            }
+
+            .col-md-12 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                width: 100%
+            }
+
+            .logomobi {
+                display: none
+            }
+
+            .logform {
+                padding-top: 2rem
+            }
