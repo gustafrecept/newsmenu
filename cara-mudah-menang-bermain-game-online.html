@@ -1205,3 +1205,294 @@
             margin: 20px 0 20px 0;
             padding: 10px
         }
+
+        .accordion h4 {
+            background-color: transparent;
+            border: 0
+        }
+
+        .accordion h4 {
+            font-size: 17px;
+            line-height: 28px
+        }
+
+        .accordion h4 i {
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            right: 0;
+            font-size: 12px
+        }
+
+        #sub_wrapper {
+            background: #685934;
+            max-width: 650px;
+            position: relative;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 20px auto
+        }
+
+        .tombol_toc {
+            position: relative;
+            outline: 0;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: calc(12px+1vh);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 300;
+            line-height: 10px;
+            color: #fff
+        }
+
+        .tombol_toc svg {
+            float: right
+        }
+
+        #daftarisi {
+            background: #262626;
+            padding: 10px 10px 0;
+            border-radius: 4px;
+            margin-top: 10px;
+            -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, .05);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, .05);
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: calc(8px+1vh);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 200;
+            line-height: 23px;
+            color: #ffd700
+        }
+
+        #daftarisi a {
+            text-decoration: none;
+            color: #fff
+        }
+
+        #daftarisi ol {
+            padding: 0 0 0 10px;
+            margin: 0
+        }
+
+        #daftarisi ol li.lvl1 {
+            line-height: 1.5em;
+            padding: 4px 0
+        }
+
+        #daftarisi ol li.lvl1:nth-child(n+2) {
+            border-top: 1px dashed #ddd
+        }
+
+        #daftarisi ol li.lvl1 a {
+            font-weight: 600
+        }
+
+        #daftarisi ol li.lvl2 a {
+            font-weight: 300;
+            display: block
+        }
+
+        #daftarisi ul.circle {
+            list-style-type: square;
+            padding: 0 0 0 10px;
+            margin: 0;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: calc(6px+1vh);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 200
+        }
+
+        #daftarisi ol li a:hover {
+            text-decoration: underline
+        }
+
+        :target::before {
+            content: "";
+            display: block;
+            height: 40px;
+            margin-top: -40px;
+            visibility: hidden
+        }
+
+        .tron-login {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 5px;
+            color: #000;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: calc(12px+1vh);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 700;
+            line-height: 23px;
+            padding: 10px;
+            background: linear-gradient(to right, rgb(0, 195, 255) 0%, #008cff 50%, #0044ff 100%);
+            -webkit-box-shadow: 1px 1px 15px 0 linear-gradient(to right, #2b1b03 0%, #008cff 100%);
+            -moz-box-shadow: 1px 1px 15px 0 linear-gradient(to right, #2b1b03 0%, #008cff 100%);
+            box-shadow: 1px 1px 15px 0 linear-gradient(to right, #2b1b03 0%, #008cff 100%);
+            border: solid #2f00ff 3px;
+            text-decoration: none;
+            display: flex;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 0 10px 3px #000000;
+            justify-content: center
+        }
+
+        .tron-login:hover {
+            background: linear-gradient(to right, #0044ff  0%, #008cff 50%, rgb(0, 195, 255)  100%);
+            border: solid #2f00ff 1px 1px 15px 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            text-decoration: none;
+            color: #fff
+        }
+
+        .tron-regis {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 5px;
+            color: #fff;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: calc(12px+1vh);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 700;
+            line-height: 23px;
+            padding: 10px;
+            background: linear-gradient(to right, rgb(0, 195, 255)  0%, #008cff  50%, #0044ff  100%);
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 0 0 10px 3px #000000;
+            margin: 0 10px 0 0
+        }
+
+        .tron-regis:hover {
+            background: linear-gradient(to right, #0044ff 0%, #008cff 50%, rgb(0, 195, 255) 100%);
+            border: solid #2b1b03 5px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            text-decoration: none
+        }
+
+        .tron {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 5px;
+            color: #000;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: calc(8px+1vh);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 300;
+            line-height: 15px;
+            padding: 10px;
+            background: linear-gradient(to bottom, rgb(0, 195, 255) 0%, #008cff 50%, #0044ff 100%);
+            -webkit-box-shadow: 1px 1px 10px 0 linear-gradient(#0044ff, #2b1b03);
+            -moz-box-shadow: 1px 1px 10px 0 linear-gradient(#0044ff, #2b1b03);
+            box-shadow: 1px 1px 10px 0 linear-gradient(#0044ff, #2b1b03);
+            border: solid #008cff 2px;
+            text-decoration: none;
+            display: flex;
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+            margin: 10px 0 10px 0
+        }
+
+        .tron:hover {
+            background: linear-gradient(to bottom, #0044ff 0%, #008cff 50%, rgb(0, 195, 255) 100%);
+            border: solid #0044ff 1px 1px 10px 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 5px;
+            text-decoration: none
+        }
+
+        .tron-images {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 5px;
+            color: #0044ff;
+            -webkit-box-shadow: 1px 1px 10px 0 #0044ff;
+            -moz-box-shadow: 1px 1px 10px 0 #0044ff;
+            box-shadow: 1px 1px 10px 0 #0044ff;
+            display: block;
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        .tron-images:hover {
+            background: #000;
+            border: solid #2f00ff 1px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0
+        }
+
+        .wa-gift {
+            position: fixed;
+            width: 44px;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+            bottom: 160px;
+            right: 20px;
+            z-index: 9
+        }
+
+        .wa-livechat {
+            position: fixed;
+            width: 44px;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+            bottom: 80px;
+            right: 20px;
+            z-index: 9
+        }
+
+        .spacer {
+            margin: 0 0 30px 0;
+            display: block
+        }
+
+        @media screen and (min-width:701px) {
+            .logomobis {
+                margin-left: 500px;
+                display: none;
+                visibility: hidden
+            }
+
+            .logo {
+                background-color: transparent;
+                justify-content: center;
+                display: block;
+                border-bottom: solid #2f00ff 2px;
+                padding: auto;
+                border-radius: 10px;
+                margin-top: 20px
+            }
