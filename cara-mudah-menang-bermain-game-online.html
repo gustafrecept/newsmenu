@@ -395,3 +395,209 @@
         .i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader {
             left: 16px !important
         }
+
+        .i-amphtml-unresolved {
+            position: relative;
+            overflow: hidden !important
+        }
+
+        .i-amphtml-select-disabled {
+            -webkit-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important
+        }
+
+        .i-amphtml-notbuilt,
+        [layout]:not(.i-amphtml-element),
+        [width][height][heights]:not([layout]):not(.i-amphtml-element),
+        [width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element) {
+            position: relative;
+            overflow: hidden !important;
+            color: transparent !important
+        }
+
+        .i-amphtml-notbuilt:not(.i-amphtml-layout-container)>*,
+        [layout]:not([layout=container]):not(.i-amphtml-element)>*,
+        [width][height][heights]:not([layout]):not(.i-amphtml-element)>*,
+        [width][height][sizes]:not([layout]):not(.i-amphtml-element)>* {
+            display: none
+        }
+
+        amp-img:not(.i-amphtml-element)[i-amphtml-ssr]>img.i-amphtml-fill-content {
+            display: block
+        }
+
+        .i-amphtml-notbuilt:not(.i-amphtml-layout-container),
+        [layout]:not([layout=container]):not(.i-amphtml-element),
+        [width][height][heights]:not([layout]):not(.i-amphtml-element),
+        [width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element) {
+            color: transparent !important;
+            line-height: 0 !important
+        }
+
+        .i-amphtml-ghost {
+            visibility: hidden !important
+        }
+
+        .i-amphtml-element>[placeholder],
+        [layout]:not(.i-amphtml-element)>[placeholder],
+        [width][height][heights]:not([layout]):not(.i-amphtml-element)>[placeholder],
+        [width][height][sizes]:not([layout]):not(.i-amphtml-element)>[placeholder] {
+            display: block;
+            line-height: normal
+        }
+
+        .i-amphtml-element>[placeholder].amp-hidden,
+        .i-amphtml-element>[placeholder].hidden {
+            visibility: hidden
+        }
+
+        .i-amphtml-element:not(.amp-notsupported)>[fallback],
+        .i-amphtml-layout-container>[placeholder].amp-hidden,
+        .i-amphtml-layout-container>[placeholder].hidden {
+            display: none
+        }
+
+        .i-amphtml-layout-size-defined>[fallback],
+        .i-amphtml-layout-size-defined>[placeholder] {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            z-index: 1
+        }
+
+        amp-img.i-amphtml-ssr:not(.i-amphtml-element)>[placeholder] {
+            z-index: auto
+        }
+
+        .i-amphtml-notbuilt>[placeholder] {
+            display: block !important
+        }
+
+        .i-amphtml-hidden-by-media-query {
+            display: none !important
+        }
+
+        .i-amphtml-element-error {
+            background: green !important;
+            color: #fff !important;
+            position: relative !important
+        }
+
+        .i-amphtml-element-error:before {
+            content: attr(error-message)
+        }
+
+        i-amp-scroll-container,
+        i-amphtml-scroll-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block
+        }
+
+        i-amp-scroll-container.amp-active,
+        i-amphtml-scroll-container.amp-active {
+            overflow: auto;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .i-amphtml-loading-container {
+            display: block !important;
+            pointer-events: none;
+            z-index: 1
+        }
+
+        .i-amphtml-notbuilt>.i-amphtml-loading-container {
+            display: block !important
+        }
+
+        .i-amphtml-loading-container.amp-hidden {
+            visibility: hidden
+        }
+
+        .i-amphtml-element>[overflow] {
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            visibility: hidden;
+            display: initial;
+            line-height: normal
+        }
+
+        .i-amphtml-layout-size-defined>[overflow] {
+            position: absolute
+        }
+
+        .i-amphtml-element>[overflow].amp-visible {
+            visibility: visible
+        }
+
+        template {
+            display: none !important
+        }
+
+        .amp-border-box,
+        .amp-border-box *,
+        .amp-border-box :after,
+        .amp-border-box :before {
+            box-sizing: border-box
+        }
+
+        amp-pixel {
+            display: none !important
+        }
+
+        amp-analytics,
+        amp-auto-ads,
+        amp-story-auto-ads {
+            position: fixed !important;
+            top: 0 !important;
+            width: 1px !important;
+            height: 1px !important;
+            overflow: hidden !important;
+            visibility: hidden
+        }
+
+        html.i-amphtml-fie>amp-analytics {
+            position: initial !important
+        }
+
+        [visible-when-invalid]:not(.visible),
+        form [submit-error],
+        form [submit-success],
+        form [submitting] {
+            display: none
+        }
+
+        amp-accordion {
+            display: block !important
+        }
+
+        @media (min-width:1px) {
+            :where(amp-accordion>section)>:first-child {
+                margin: 0;
+                background-color: #efefef;
+                padding-right: 20px;
+                border: 1px solid #dfdfdf
+            }
+
+            :where(amp-accordion>section)>:last-child {
+                margin: 0
+            }
+        }
+
+        amp-accordion>section {
+            float: none !important
+        }
+
+        amp-accordion>section>* {
+            float: none !important;
+            display: block !important;
+            overflow: hidden !important;
+            position: relative !important
+        }
