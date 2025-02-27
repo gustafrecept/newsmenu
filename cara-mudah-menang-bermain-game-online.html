@@ -1496,3 +1496,303 @@
                 border-radius: 10px;
                 margin-top: 20px
             }
+
+            .tron-regis {
+                margin: 0 10px 0 0
+            }
+
+            .tron-login {
+                margin: 0 10px 0 0
+            }
+        }
+
+        @media screen and (max-width:701px) {
+            .logo {
+                margin-left: 500px;
+                border-bottom: solid #000 2px;
+                display: none
+            }
+
+            .logomobis {
+                background-color: transparent;
+                justify-content: center;
+                display: flex;
+                border-bottom: solid #2f00ff 2px;
+                padding: auto;
+                border-radius: 10px
+            }
+
+            .tron-regis {
+                margin: 0 10px 0 0
+            }
+
+            .tron-login {
+                margin: 0 10px 0 0
+            }
+        }
+
+        .updated {
+            border: solid 2px #2f00ff;
+            padding: 10px
+        }
+
+        .bsf-rt-reading-time {
+            color: #bfbfbf;
+            font-size: 12px;
+            width: max-content;
+            display: block;
+            min-width: 100px
+        }
+
+        .bsf-rt-display-label:after {
+            content: attr(prefix)
+        }
+
+        .bsf-rt-display-time:after {
+            content: attr(reading_time)
+        }
+
+        .bsf-rt-display-postfix:after {
+            content: attr(postfix)
+        }
+
+        .bonus {
+            width: 88px;
+            height: 102px
+        }
+
+        @media (min-width:768px) {
+            .bonus {
+                width: 44px;
+                height: 51px
+            }
+        }
+
+        @media (min-width:320px) and (max-width:480px) {
+            .main-menu-container>li>a {
+                padding: 18px
+            }
+        }
+
+        @media (min-width:481px) and (max-width:767px) {
+            .main-menu-container>li>a {
+                padding: 30px
+            }
+        }
+
+        p#breadcrumbs {
+            color: #fff;
+            text-align: center
+        }
+
+        .site-description li h4 {
+            color: #fff;
+            line-height: 26px;
+            margin: 5px;
+            padding: 0;
+            text-align: left
+        }
+
+        .tron-regis {
+            animation: blinkings 0.5s infinite;
+            transition: all .4s;
+            touch-action: manipulation;
+            cursor: pointer
+        }
+
+        .anim {
+            animation: blinkings 1s infinite
+        }
+
+        @keyframes blinkings {
+            0% {
+                border: 4px solid #fff
+            }
+
+            100% {
+                border: 4px solid #008cff
+            }
+        }
+
+        span.faq-arrow {
+            float: right;
+            color: #2f00ff;
+        }
+
+        .fixed-footer {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            background: linear-gradient(to bottom, rgb(0, 195, 255) 0%, #008cff 50%, #0044ff 100%);
+            padding: 5px 0;
+            border-radius: 50px 50px 0px 0px;
+            box-shadow: 0 0 8px 4px #000000;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            border-top: 3px solid #2f00ff;
+        }
+
+        .fixed-footer a {
+            flex-basis: calc((100% - 15px*6)/ 5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            max-width: 75px;
+            font-size: 12px
+        }
+
+        .fixed-footer .center {
+            transform: scale(1.5) translateY(-5px);
+            background: center no-repeat;
+            background-size: contain;
+            background-color: inherit;
+            border-radius: 50%
+        }
+
+        .fixed-footer amp-img {
+            max-width: 30%;
+            margin-bottom: 5px
+        }
+
+        .tada {
+            -webkit-animation-name: tada;
+            animation-name: tada;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite
+        }
+
+        @-webkit-keyframes tada {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+            }
+
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        @keyframes tada {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+            }
+
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        .wobble {
+            -webkit-animation-name: wobble;
+            animation-name: wobble;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite
+        }
+
+        @-webkit-keyframes wobble {
+            0% {
+                -webkit-transform: none;
+                transform: none
+            }
+
+            15% {
+                -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+                transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+            }
+
+            30% {
+                -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+                transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+            }
+
+            45% {
+                -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+                transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+            }
+
+            60% {
+                -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+                transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+            }
+
+            75% {
+                -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+                transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+            }
+
+            100% {
+                -webkit-transform: none;
+                transform: none
+            }
+        }
+
+        @keyframes wobble {
+            0% {
+                -webkit-transform: none;
+                transform: none
+            }
+
+            15% {
+                -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+                transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+            }
+
+            30% {
+                -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+                transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+            }
